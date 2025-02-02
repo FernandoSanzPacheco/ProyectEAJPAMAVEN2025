@@ -12,18 +12,40 @@
 	 <maven.compiler.target>1.8</maven.compiler.target>
  </properties>
   <dependencies>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
     <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
 	    <version>3.0.1</version>
 	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>	
+	  <groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>5.1.25</version>	
+	</dependency>
+    
+    <!-- archivos para trabajar con JPA -->
+    <dependency>
+	  <groupId>com.smartnews</groupId>
+	  <artifactId>maven-jpa-entity-generator-plugin</artifactId>
+	  <version>0.99.9</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>com.ethlo.persistence.tools</groupId>
+	  <artifactId>eclipselink-maven-plugin</artifactId>
+	  <version>2.7.1</version>
 	</dependency>
     
   </dependencies>
